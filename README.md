@@ -1,12 +1,11 @@
-# Kumak — Living Network
+# KumakKomando - Living Network
 
-A responsive one-page portfolio concept where each section is a connected node: the gateway, identity, services, infrastructure, route, and connection request.
+A responsive portfolio for Engku Aiman Zakwan, presenting his IT operations and network security experience as a connected professional network.
 
-## Personalize the content
+## Content
 
-- Replace the three sample project cards in `index.html` with real work and link each card to its case study.
-- Update the service descriptions and experience stops to match Kumak's background.
-- Change `hello@example.com` to the preferred contact address.
-- Adjust the page title and description in the document head when the portfolio details are final.
+- Career history, skills, education, and certifications are drawn from the supplied resume.
+- Work cards summarize responsibilities described in the resume; they do not claim unverified project results or metrics.
+- Contact links point to the email and LinkedIn profile listed in the resume.
 
-The site uses plain HTML, CSS, and JavaScript. Google Fonts load over the network; the layout and network illustration are built with CSS and SVG.
+The site uses plain HTML, CSS, and JavaScript. Google Fonts load over the network; the network illustration is built with CSS and SVG.
