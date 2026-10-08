@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#090d13">
+  <meta name="theme-color" content="#101a13">
   <meta name="description" content="Engku Aiman Zakwan &mdash; IT operations analyst focused on network operations, security, and reliable production services.">
   <title>Aiman Zakwan | KumakKomando &mdash; Network Operations</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,6 +14,10 @@
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
+  <div class="cursor-packet" aria-hidden="true">
+    <span class="cursor-packet-trail trail-one"></span><span class="cursor-packet-trail trail-two"></span><span class="cursor-packet-trail trail-three"></span>
+    <span class="cursor-packet-core"><i></i></span>
+  </div>
   <svg class="network-map" viewBox="0 0 1440 3600" preserveAspectRatio="none" aria-hidden="true">
     <path class="route route-a" pathLength="100" d="M720 0 C720 260 180 230 180 500 S1240 760 1240 1030 S270 1290 270 1570 S1130 1810 1130 2070 S340 2320 340 2580 S1110 2830 1110 3090 S720 3340 720 3600"/>
     <path class="route route-b" pathLength="100" d="M720 80 C970 300 350 470 350 690 S1010 900 1010 1110 S510 1370 510 1580 S930 1810 930 2030 S430 2290 430 2510 S1000 2750 1000 2970 S720 3240 720 3500"/>
@@ -28,7 +32,7 @@
     <a class="brand" href="#home" aria-label="KumakKomando home"><span class="brand-mark">K<span>.</span></span><span>KUMAKKOMANDO</span></a>
     <div class="network-status"><span class="pulse"></span><span>NETWORK ONLINE</span></div>
     <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span class="sr-only">Toggle navigation</span></button>
-    <nav id="main-nav" aria-label="Main navigation"><a href="#about">Identity</a><a href="#skills">Capabilities</a><a href="#projects">Work</a><a href="#experience">Experience</a><a href="#contact" class="nav-connect">Connect <span>&#8599;</span></a></nav>
+    <nav id="main-nav" aria-label="Main navigation"><a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#trace">Packet trace</a><a href="#projects">Portfolio</a><a href="#experience">Education &amp; route</a><a href="#contact" class="nav-connect">Contact <span>&#8599;</span></a></nav>
   </header>
 
   <main>
@@ -38,6 +42,7 @@
         <h1>Keeping networks<br>in <em>motion.</em></h1>
         <p class="hero-lede">I'm <strong>Engku Aiman Zakwan</strong>.<br>IT Operations Analyst focused on production services, network operations, and security.</p>
         <a class="button button-primary" href="#experience"><span>Explore my route</span><span class="button-icon">&darr;</span></a>
+        <a class="hero-trace-link" href="#trace"><span class="trace-link-dot"></span> TRACE A SAMPLE PACKET <span>&#8599;</span></a>
         <div class="hero-meta"><span>DUNGUN, TERENGGANU</span><span>NETWORK / SECURITY / CLOUD</span></div>
       </div>
       <div class="gateway reveal" aria-label="Network gateway illustration">
@@ -49,7 +54,73 @@
         <a class="gateway-node node-route" href="#experience"><span class="node-dot"></span><span>EXPERIENCE</span><b>04</b></a>
         <span class="gateway-coord coord-a">DUNGUN<br>TERENGGANU, MY</span><span class="gateway-coord coord-b">NODE: KUMAK-01</span>
       </div>
-      <span class="section-index">GATEWAY <b>&mdash; 00</b></span>
+      <div class="gateway-scene reveal">
+        <svg class="gateway-scene-art" viewBox="0 0 540 260" role="img" aria-labelledby="gateway-scene-title gateway-scene-desc">
+          <title id="gateway-scene-title">Field operator configuring an edge router</title>
+          <desc id="gateway-scene-desc">A commando in green field uniform kneels beside a router while animated packets travel to a cloud node.</desc>
+          <defs>
+            <linearGradient id="uniform-shade" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#75865a"/><stop offset="1" stop-color="#344b35"/></linearGradient>
+            <linearGradient id="router-shade" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#344a35"/><stop offset="1" stop-color="#18271c"/></linearGradient>
+            <radialGradient id="scene-halo"><stop stop-color="#718552" stop-opacity=".16"/><stop offset="1" stop-color="#718552" stop-opacity="0"/></radialGradient>
+          </defs>
+          <ellipse class="scene-halo" cx="280" cy="153" rx="220" ry="102"/>
+          <path class="scene-ground" d="M19 218H520"/>
+          <path class="scene-link" d="M369 151C404 124 419 106 444 88"/>
+          <g class="scene-cloud">
+            <path class="cloud-outline" d="M427 88c-12 0-21-8-21-18 0-9 7-16 18-18 4-13 16-21 31-21 16 0 30 11 32 26 12 1 21 9 21 19 0 7-4 12-10 16h-71Z"/>
+            <path class="cloud-inner" d="M438 65h41m-35 9h29"/>
+            <circle class="cloud-spark" cx="455" cy="52" r="2"/><circle class="cloud-spark spark-two" cx="482" cy="82" r="1.5"/>
+            <text class="scene-label cloud-label" x="463" y="111" text-anchor="middle">CLOUD NODE</text>
+          </g>
+          <g class="operator-legs">
+            <path class="operator-leg operator-leg-back" d="M115 157c-19 6-36 20-45 36l-31 9-7 9 49 4 48-29 24-19Z"/>
+            <path class="operator-boot" d="m40 199-8 3-3 8 49 5 10-8-14-8Z"/>
+            <path class="operator-leg operator-leg-front" d="m144 156 35 17c16 7 28 15 31 29l28 9 8 8-57 1-39-17-35-20Z"/>
+            <path class="operator-boot" d="m207 199 33 7 8 8-57 1-10-8 9-8Z"/>
+            <path class="knee-pad" d="m177 183 20 6 6 14-21 4-11-10Z"/>
+          </g>
+          <g class="scene-operator">
+            <g class="operator-body">
+              <path class="operator-uniform" d="m99 91 23-14 31 12 15 40-14 34-39 5-26-20-9-31Z"/>
+              <path class="uniform-panel" d="m100 101 15-13 10 15-7 19-19-4Z"/>
+              <path class="uniform-panel panel-two" d="m143 91 10 4 11 34-13 16-9-20Z"/>
+              <path class="operator-vest" d="m111 83 14-5 22 12 13 34-12 19-26-5-8-23Z"/>
+              <path class="vest-strap" d="m116 86 15 41m-3-41 15 40"/>
+              <rect class="vest-pocket" x="119" y="101" width="15" height="17" rx="2"/><rect class="vest-pocket pouch-two" x="139" y="104" width="12" height="14" rx="2"/>
+              <path class="vest-flap" d="M119 105h15m5 2h12"/>
+              <path class="operator-arm resting-arm" d="m101 102-17 15 4 27 18 8 9-8-13-12 12-15Z"/>
+              <path class="operator-arm working-arm" d="m151 96 19 9 21 20 39 10 37 8 10 7-5 8-47-8-42-8-22-17-20-7Z"/>
+              <path class="operator-glove" d="m268 140 13 3 7 7-6 8-14-5-5-6Z"/>
+              <path class="operator-neck" d="m111 70 1 17 16 6 3-19Z"/>
+              <ellipse class="operator-head" cx="116" cy="66" rx="15" ry="17"/>
+              <path class="operator-face" d="m128 62 9 6-8 7-3-6Z"/>
+              <path class="operator-ear" d="M102 63c-7-3-8 8 0 10"/>
+              <path class="operator-helmet" d="M99 61c0-17 10-27 25-26 13 1 20 10 21 23l-9 4-3-10-26 4-4 11Z"/>
+              <path class="helmet-band" d="m102 55 39-5"/>
+              <path class="helmet-mark" d="m119 38 4-6 4 6-4 4Z"/>
+              <path class="helmet-strap" d="m103 68 4 15m34-14-4 13"/>
+              <path class="uniform-patch" d="m97 107 10-3 3 9-10 3Z"/>
+              <path class="shoulder-patch" d="m151 101 9 5-4 9-9-4Z"/>
+              <circle class="radio-button" cx="147" cy="93" r="2"/>
+            </g>
+            <text class="scene-label operator-label" x="112" y="239" text-anchor="middle">FIELD TECH</text>
+          </g>
+          <g class="scene-router">
+            <path class="router-aerial" d="m293 150-5-36m73 36 6-36"/>
+            <circle class="router-aerial-tip" cx="288" cy="114" r="3"/><circle class="router-aerial-tip" cx="372" cy="114" r="3"/>
+            <rect class="router-housing" x="276" y="147" width="112" height="49" rx="8"/>
+            <path class="router-housing-top" d="M285 149h94"/>
+            <text class="router-device-name" x="289" y="166">EDGE ROUTER</text>
+            <text class="router-device-id" x="289" y="180">R-01 / CONFIG</text>
+            <circle class="router-light led-one" cx="371" cy="161" r="2.5"/><circle class="router-light led-two" cx="371" cy="171" r="2.5"/><circle class="router-light led-three" cx="371" cy="181" r="2.5"/>
+            <path class="router-port" d="M290 196v5m10-5v5m10-5v5m10-5v5m10-5v5"/>
+          </g>
+          <circle class="scene-packet packet-one" r="4"><animateMotion dur="2.6s" begin="0s" repeatCount="indefinite" path="M369 151C404 124 419 106 444 88"/></circle>
+          <circle class="scene-packet packet-two" r="3"><animateMotion dur="2.6s" begin="1.3s" repeatCount="indefinite" path="M369 151C404 124 419 106 444 88"/></circle>
+          <text class="scene-kicker" x="24" y="28">FIELD CONFIG / KUMAKKOMANDO</text>
+          <text class="scene-live" x="514" y="239" text-anchor="end"><tspan class="live-dot">&#9679;</tspan> LINK ACTIVE</text>
+        </svg>
+      </div>
     </section>
 
     <section class="section identity" id="about" data-node="01">
@@ -72,19 +143,64 @@
       <div class="credentials reveal"><div class="credentials-heading"><span class="eyebrow">TRUSTED CONNECTIONS</span><span class="credentials-count">CERTIFICATIONS / 08</span></div><div class="credential-list"><span>CCNA</span><span>AWS Solutions Architect - Associate</span><span>Microsoft Azure Fundamentals (AZ-900)</span><span>Fortinet Certified Associate in Cybersecurity</span><span>Certified Cloud Solutions Architect - APU/APIIT</span><span>Ruckus Accredited Wi-Fi Designer</span><span>Leviton Network Solutions - Copper &amp; Fiber Cabling</span><span>AWS Academy Cloud Foundations</span></div></div>
     </section>
 
-    <section class="section projects" id="projects" data-node="03">
-      <div class="section-heading reveal"><span class="section-index">INFRASTRUCTURE NODES <b>&mdash; 03</b></span><span class="eyebrow">SELECTED WORK / FROM THE FIELD</span></div>
+    <section class="section trace-section" id="trace" data-node="03">
+      <div class="section-heading reveal"><span class="section-index">PACKET INSPECTION <b>&mdash; 03</b></span><span class="eyebrow">PACKET TRACER / WIRESHARK INSPIRED</span></div>
+      <div class="trace-intro reveal"><h2>Follow the packet.<br><em>Read the signal.</em></h2><p>Watch a sample flow travel across the network, then select a frame to inspect its protocol layers. This is a visual simulation with illustrative data, not a live capture.</p></div>
+      <div class="trace-workbench reveal">
+        <div class="trace-map-panel">
+          <div class="trace-panel-heading"><span><i class="capture-light"></i> PACKET TRACER / TOPOLOGY</span><span>SIMULATION ACTIVE</span></div>
+          <svg class="trace-svg" viewBox="0 0 820 190" role="img" aria-label="Simulated packets moving from a client through a firewall and router to a service node">
+            <path class="trace-lane" d="M82 91 C150 91 210 91 280 91 S420 91 480 91 S630 91 738 91"/>
+            <path class="trace-lane-glow" d="M82 91 C150 91 210 91 280 91 S420 91 480 91 S630 91 738 91"/>
+            <g class="trace-device client-device"><circle cx="82" cy="91" r="18"/><text x="82" y="96" text-anchor="middle">01</text><text class="trace-device-name" x="82" y="137" text-anchor="middle">CLIENT</text></g>
+            <g class="trace-device firewall-device"><circle cx="280" cy="91" r="18"/><text x="280" y="96" text-anchor="middle">FW</text><text class="trace-device-name" x="280" y="137" text-anchor="middle">FIREWALL</text></g>
+            <g class="trace-device router-device"><circle cx="480" cy="91" r="18"/><text x="480" y="96" text-anchor="middle">R</text><text class="trace-device-name" x="480" y="137" text-anchor="middle">CORE ROUTER</text></g>
+            <g class="trace-device service-device"><circle cx="738" cy="91" r="18"/><text x="738" y="96" text-anchor="middle">S</text><text class="trace-device-name" x="738" y="137" text-anchor="middle">SERVICE</text></g>
+            <circle class="trace-packet packet-https" data-packet="https" r="5"><animateMotion dur="5s" begin="0s" repeatCount="indefinite" path="M82 91 C150 91 210 91 280 91 S420 91 480 91 S630 91 738 91"/></circle>
+            <circle class="trace-packet packet-dns" data-packet="dns" r="5"><animateMotion dur="5s" begin="1.65s" repeatCount="indefinite" path="M82 91 C150 91 210 91 280 91 S420 91 480 91 S630 91 738 91"/></circle>
+            <circle class="trace-packet packet-icmp" data-packet="icmp" r="5"><animateMotion dur="5s" begin="3.3s" repeatCount="indefinite" path="M82 91 C150 91 210 91 280 91 S420 91 480 91 S630 91 738 91"/></circle>
+          </svg>
+          <div class="trace-map-footer"><span>CLIENT <b>192.168.10.24</b></span><span>EDGE <b>INSPECT / ROUTE</b></span><span>DESTINATION <b>SIMULATED</b></span></div>
+          <button class="trace-toggle" type="button" aria-pressed="false"><span class="toggle-icon">&#9646;&#9646;</span><span>Pause packet flow</span></button>
+        </div>
+        <div class="inspector-panel">
+          <div class="trace-panel-heading inspector-heading"><span><i class="capture-light"></i> WIRESHARK STYLE / FRAME LIST</span><span>3 FRAMES</span></div>
+          <div class="packet-table" role="group" aria-label="Choose a simulated packet to inspect">
+            <div class="packet-columns" aria-hidden="true"><span>NO.</span><span>TIME</span><span>PROTO</span><span>SOURCE</span><span>DEST</span><span>LEN</span></div>
+            <button class="packet-row is-selected" type="button" data-packet="https" aria-pressed="true"><span>001</span><span>0.0000</span><span class="proto proto-tcp">TCP</span><span>CLIENT</span><span>WEB</span><span>74</span></button>
+            <button class="packet-row" type="button" data-packet="dns" aria-pressed="false"><span>002</span><span>0.0018</span><span class="proto proto-dns">DNS</span><span>CLIENT</span><span>RESOLVER</span><span>86</span></button>
+            <button class="packet-row" type="button" data-packet="icmp" aria-pressed="false"><span>003</span><span>0.0042</span><span class="proto proto-icmp">ICMP</span><span>CLIENT</span><span>REMOTE</span><span>98</span></button>
+          </div>
+          <div class="packet-inspector" aria-live="polite" aria-atomic="true">
+            <div class="inspector-title"><span>SELECTED FRAME</span><b data-inspector="frame">001 / TCP</b></div>
+            <p class="inspector-summary" data-inspector="summary">TLS web session sample. A client packet is routed toward a secure service.</p>
+            <div class="packet-facts"><div><span>SOURCE</span><b data-inspector="source">192.168.10.24:54122</b></div><div><span>DESTINATION</span><b data-inspector="destination">203.0.113.18:443</b></div><div><span>FRAME LENGTH</span><b data-inspector="length">74 bytes</b></div></div>
+            <div class="protocol-stack" aria-label="Protocol layers"><span data-layer="link">ETHERNET II</span><span data-layer="network">IPv4</span><span data-layer="transport">TCP</span><span data-layer="application">HTTPS / TLS</span></div>
+          </div>
+        </div>
+      </div>
+      <p class="trace-note reveal">SAMPLE TRAFFIC ONLY <span>Addresses use documentation ranges. No network traffic is captured or transmitted.</span></p>
+    </section>
+
+    <section class="section projects" id="projects" data-node="04">
+      <div class="section-heading reveal"><span class="section-index">INFRASTRUCTURE NODES <b>&mdash; 04</b></span><span class="eyebrow">SELECTED WORK / FROM THE FIELD</span></div>
       <div class="projects-head reveal"><h2>Work that keeps<br><em>systems moving.</em></h2><p>Operational work across production services, enterprise networks, wireless deployments, and a hands-on automation lab.</p></div>
+      <div class="project-categories reveal" role="group" aria-label="Filter portfolio by category">
+        <button class="project-category is-active" type="button" data-project-filter="all" aria-pressed="true">All work <span>03</span></button>
+        <button class="project-category" type="button" data-project-filter="operations" aria-pressed="false">IT operations <span>01</span></button>
+        <button class="project-category" type="button" data-project-filter="network" aria-pressed="false">Network &amp; security <span>03</span></button>
+        <button class="project-category" type="button" data-project-filter="wireless" aria-pressed="false">Wireless &amp; automation <span>01</span></button>
+      </div>
       <div class="project-grid">
-        <article class="project-card project-feature reveal"><div class="project-art art-a"><span class="art-grid"></span><span class="art-shape shape-a"></span><span class="art-shape shape-b"></span><span class="art-caption">01 / OPERATIONS</span></div><div class="project-info"><div><span class="project-type">ACCENTURE / SEP 2025 - PRESENT</span><h3>Production service operations</h3></div><span class="project-arrow">&#8599;</span></div><p class="project-desc">Incident and outage coordination, infrastructure and firewall checks, change validation, backup operations, and clear updates for technical teams.</p></article>
-        <article class="project-card reveal"><div class="project-art art-b"><span class="art-grid"></span><span class="art-ring ring-a"></span><span class="art-ring ring-b"></span><span class="art-caption">02 / NETWORK DELIVERY</span></div><div class="project-info"><div><span class="project-type">NETWORK ALLIANCE / 2023 - 2025</span><h3>Enterprise network support</h3></div><span class="project-arrow">&#8599;</span></div><p class="project-desc">Customer network and security support, equipment installation and commissioning, preventive maintenance, incident troubleshooting, and technical reporting.</p></article>
-        <article class="project-card reveal"><div class="project-art art-c"><span class="art-grid"></span><span class="art-block block-a"></span><span class="art-block block-b"></span><span class="art-caption">03 / WIRELESS &amp; AUTOMATION</span></div><div class="project-info"><div><span class="project-type">ACETEAM + RAFATECH / 2022 - 2023</span><h3>Wireless deployment &amp; lab automation</h3></div><span class="project-arrow">&#8599;</span></div><p class="project-desc">Indoor and outdoor access point deployments, onsite fault isolation, Proxmox validation, and ELK Stack testing with Ansible.</p></article>
+        <article class="project-card project-feature reveal" data-project-categories="operations network"><div class="project-art art-a"><span class="art-grid"></span><span class="art-shape shape-a"></span><span class="art-shape shape-b"></span><span class="art-caption">01 / OPERATIONS</span></div><div class="project-info"><div><span class="project-type">ACCENTURE / SEP 2025 - PRESENT</span><h3>Production service operations</h3></div><span class="project-arrow">&#8599;</span></div><p class="project-desc">Incident and outage coordination, infrastructure and firewall checks, change validation, backup operations, and clear updates for technical teams.</p></article>
+        <article class="project-card reveal" data-project-categories="network"><div class="project-art art-b"><span class="art-grid"></span><span class="art-ring ring-a"></span><span class="art-ring ring-b"></span><span class="art-caption">02 / NETWORK DELIVERY</span></div><div class="project-info"><div><span class="project-type">NETWORK ALLIANCE / 2023 - 2025</span><h3>Enterprise network support</h3></div><span class="project-arrow">&#8599;</span></div><p class="project-desc">Customer network and security support, equipment installation and commissioning, preventive maintenance, incident troubleshooting, and technical reporting.</p></article>
+        <article class="project-card reveal" data-project-categories="wireless network"><div class="project-art art-c"><span class="art-grid"></span><span class="art-block block-a"></span><span class="art-block block-b"></span><span class="art-caption">03 / WIRELESS &amp; AUTOMATION</span></div><div class="project-info"><div><span class="project-type">ACETEAM + RAFATECH / 2022 - 2023</span><h3>Wireless deployment &amp; lab automation</h3></div><span class="project-arrow">&#8599;</span></div><p class="project-desc">Indoor and outdoor access point deployments, onsite fault isolation, Proxmox validation, and ELK Stack testing with Ansible.</p></article>
       </div>
       <div class="project-footer reveal"><span>EXPERIENCE AREAS / NO UNVERIFIED METRICS</span><a href="#contact" class="text-link">Connect about a role or project <span>&#8599;</span></a></div>
     </section>
 
-    <section class="section route-section" id="experience" data-node="04">
-      <div class="section-heading reveal"><span class="section-index">NETWORK ROUTE <b>&mdash; 04</b></span><span class="eyebrow">CAREER / 2022 TO PRESENT</span></div>
+    <section class="section route-section" id="experience" data-node="05">
+      <div class="section-heading reveal"><span class="section-index">NETWORK ROUTE <b>&mdash; 05</b></span><span class="eyebrow">CAREER / 2022 TO PRESENT</span></div>
       <div class="route-layout"><div class="route-intro reveal"><h2>Built one<br><em>connection at a time.</em></h2><p>From wireless engineering to production operations, each role adds another layer of context to the network.</p><div class="education-block"><span class="eyebrow">EDUCATION NODES</span><div><strong>Bachelor of Computer Science</strong><p>Computer Networking / Universiti Teknikal Malaysia Melaka / 2019-2022</p></div><div><strong>Diploma in Digital Technology</strong><p>Information Security / Politeknik Ungku Omar / 2016-2019</p></div></div></div>
         <div class="timeline">
           <article class="timeline-stop reveal"><span class="timeline-dot"></span><span class="timeline-time">SEP 2025 - NOW</span><div><h3>IT Operations Analyst</h3><p>Accenture</p><p class="timeline-detail">Managing production incidents and outages, coordinating restoration, performing network and firewall checks, and validating operational changes.</p></div><span class="timeline-tag">ACTIVE ROUTE</span></article>
@@ -96,8 +212,8 @@
     </section>
 
     
-    <section class="section contact" id="contact" data-node="05">
-      <div class="contact-grid reveal"><div><span class="section-index">CONNECTION REQUEST <b>&mdash; 05</b></span><h2>Let's keep<br>good work <em>moving.</em></h2><p>For network operations, security, cloud, or infrastructure opportunities, send a signal.</p></div><div class="contact-action"><span class="contact-orbit orbit-one"></span><span class="contact-orbit orbit-two"></span><a class="contact-link" href="mailto:e.aimanzakwan1998@gmail.com"><span class="contact-link-label">OPEN A CHANNEL</span><span class="contact-link-main">Say hello <b>&#8599;</b></span><span class="contact-link-address">e.aimanzakwan1998@gmail.com</span></a></div></div>
+    <section class="section contact" id="contact" data-node="06">
+      <div class="contact-grid reveal"><div><span class="section-index">CONNECTION REQUEST <b>&mdash; 06</b></span><h2>Let's keep<br>good work <em>moving.</em></h2><p>For network operations, security, cloud, or infrastructure opportunities, send a signal.</p></div><div class="contact-action"><span class="contact-orbit orbit-one"></span><span class="contact-orbit orbit-two"></span><a class="contact-link" href="mailto:e.aimanzakwan1998@gmail.com"><span class="contact-link-label">OPEN A CHANNEL</span><span class="contact-link-main">Say hello <b>&#8599;</b></span><span class="contact-link-address">e.aimanzakwan1998@gmail.com</span></a></div></div>
       <div class="contact-bottom"><span><span class="pulse"></span> SIGNAL READY</span><a href="https://www.linkedin.com/in/engkuaimanzakwan" target="_blank" rel="noreferrer">LINKEDIN PROFILE &#8599;</a><a href="#home">BACK TO GATEWAY &#8593;</a></div>
     </section>
 

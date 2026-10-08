@@ -2,6 +2,8 @@
 
 A responsive portfolio for Engku Aiman Zakwan, presenting his IT operations and network security experience as a connected professional network.
 
+The packet trace node adds a Packet Tracer-inspired topology animation and a Wireshark-style sample frame inspector. Packet rows are selectable, and the flow can be paused or resumed. All packet values are illustrative; the page does not capture or transmit network traffic.
+
 ## Content
 
 - Career history, skills, education, and certifications are drawn from the supplied resume.
